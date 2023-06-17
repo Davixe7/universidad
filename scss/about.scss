@@ -1,0 +1,42 @@
+.about-us {
+  .subline {
+    @media(min-width: 991px){
+      white-space: nowrap;
+    }
+  }
+}
+.benefits {
+  background-image: url('./../img/BACKGROUND\ BENEFITS.jpg');
+  background-color: #02557D;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.benefit-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  max-width: 220px;
+  margin-bottom: 1.5rem;
+
+  &__avatar {
+    border-radius: 50%;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    img {
+      max-width: 65%;
+    }
+  }
+  &__title {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+}

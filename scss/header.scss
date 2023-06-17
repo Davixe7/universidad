@@ -1,0 +1,42 @@
+.subheader {
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 700;
+  background: #02557D;
+  letter-spacing: .04em;
+  position: relative;
+  z-index: 3000;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__contact-item, &__contact-item a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  &__contact-item {
+    margin-right: 3rem;
+  }
+}
+
+.navbar {
+  z-index: 1000;
+  &:has(.navbar-collapse.show){
+    background: #02557d;
+  }
+}
+.navbar-nav .nav-item {
+  margin-right: 1.8rem;
+  padding-left: 0;
+  padding-right: 0;
+  &:last-child { margin-right: 1rem; }
+  .nav-link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  color: #fff;
+  padding: 2.5rem 0;
+  background: #02557d;
+}
+.footer__logo {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer__first-row {
+  margin-bottom: 1rem;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+}
+
+.footer-nav {
+  margin-bottom: 2rem;
+}
+.footer-nav__title {
+  color: var(--orange);
+  font-family: 'Concert One', sans-serif;
+  font-size: 1.5625rem;
+  margin-bottom: 2.5rem;
+}
+.footer-nav__nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav__item  {
+  margin-bottom: 1rem;
+  a {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+}
+
+.input-group {
+  .form-control {
+    background: #fff;
+    height: 30px;
+    margin-right: -1rem;
+  }
+  .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem !important;
+  }
+}
