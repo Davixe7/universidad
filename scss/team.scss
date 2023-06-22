@@ -1,0 +1,39 @@
+.section-team-members {
+  background: #efefef;
+}
+
+.team-member-card {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  &__avatar {
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 1.25rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  &__name {
+    font-size: 1.25em;
+    line-height: 1em;
+    font-weight: 700;
+  }
+  &__title {
+    color: var(--orange);
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+  .btn {
+    width: fit-content;
+  }
+}
+
+.carousel-control-prev-icon {
+  background: url('./../img/chevron_left.svg') no-repeat;
+  background-size: 20px;
+}
+
+.carousel-control-next-icon {
+  background: url('./../img/chevron_right.svg') no-repeat;
+  background-size: 20px;
+}

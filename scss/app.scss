@@ -1,52 +1,34 @@
+@import 'buttons.scss';
 @import 'header.scss';
+@import 'navbar.scss';
+@import 'footer.scss';
+
+// sections
 @import 'hero.scss';
 @import 'about.scss';
-@import 'footer.scss';
+@import 'careers.scss';
+@import 'team.scss';
+@import 'testimonials.scss';
+
 :root {
   --orange: #FFB846;
+  --dark-orange: #d19027;
 }
-.btn {
-  font-size: 1.375rem;
-  border-radius: 30px;
-  padding: .5rem 2.25rem;
-  font-weight: 600;
+html {
+  scroll-behavior: smooth;
 }
-.btn.btn-primary {
-  background: var(--orange);
-  border: 1px solid #fff;
-  font-weight: 700;
-  color: #fff;
-}
-.btn-sm {
-  height: 30px;
-  font-size: .875rem;
-  border-radius: 1.25rem;
-  padding: .25rem 2.375rem;
-}
-.btn-lg {
-  border-radius: 1.5em;
-  padding: .5em 2.75rem;
-}
-
 body {
   font-family: 'Nunito', sans-serif;
   background: #02557d;
+  @media(max-width: 991px){
+    text-align: center;
+  }
 }
-
-.socials-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li  {
-    margin: 0 .75rem;
-    a { text-decoration: none; }
-  }
-  @media(min-width: 991px){
-    justify-content: start;
-  }
+.bg-blue {
+  background: #02557D !important;
+}
+img {
+  object-fit: cover;
 }
 
 .form-control {
@@ -61,6 +43,7 @@ section {
 
 .section-title {
   color: #103644;
+  text-align: center;
   margin-bottom: 75px;
   .headline {
     font-weight: 700;
@@ -73,7 +56,10 @@ section {
       display: block;
       width: 200px;
       border-top: 3px solid #FFD6A1;
-      margin-top: .45rem;
+      margin: .45rem auto;
+      @media (min-width: 991px) {
+        margin: .45rem 0 0 0;
+      }
     }
   }
   .subline {
@@ -82,10 +68,9 @@ section {
     line-height: 1.3125rem;
     margin-bottom: 1em;
   }
-}
-
-.section-offers {
-  background: #fff;
+  @media (min-width: 991px) {
+    text-align: left;
+  }
 }
 
 .course-card {
@@ -106,82 +91,28 @@ section {
   }
 }
 
-p.p {
-  font-size: 1.25em;
-  letter-spacing: -.02em;
-  line-height: 1.2em;
-  padding: 0 3em 1.75em 0;
-}
-
 .about-us {
   padding-bottom: 100px;
   &__image {
-    padding: 50px 0 0 3rem;
     display: flex;
+    padding: 1rem;
     img {
       width: 440px;
       max-width: 100%;
       border: 8px solid #B9CFDD;
       border-radius: 10px;
     }
-  }
-}
-
-.category-card {
-  .card-title {
-    font-family: 'Concert One', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1em;
-    color: #fff;
-  }
-  .card-img-overlay {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    background: rgba(0,0,0,.5);
-    .btn {
-      width: fit-content;
+    @media(min-width: 991px){
+      padding: 50px 0 0 3rem;
     }
   }
 }
 
-.section-team-members {
-  background: #efefef;
-}
-.team-member-card {
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  &__avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin: -50px auto 1.25rem;
+p.p {
+  font-size: 1.25em;
+  letter-spacing: -.02em;
+  line-height: 1.2em;
+  @media(min-width: 991px){
+    padding: 0 3em 1.75em 0;
   }
-  &__name {
-    font-size: 1.25em;
-    line-height: 1em;
-    font-weight: 700;
-  }
-  &__title {
-    color: var(--orange);
-    font-size: 1.25em;
-    font-weight: 400;
-  }
-  .btn {
-    width: fit-content;
-  }
-}
-
-.btn-outline-primary {
-  color: var(--orange);
-  border: 2px solid var(--orange);
-  background: none;
-}
-.btn.btn-xs {
-  font-weight: 600;
-  font-size: .65rem;
-  padding: .5em 1.5em;
-  margin: 1rem auto;
 }
